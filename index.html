@@ -1,12 +1,152 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/styles/reset.css" />
+        <link rel="stylesheet" href="/styles/styles.css" />
+        <title>Сервесный центр CSP</title>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li>
+                        <ul class="navigation__left-column">
+                            <li class="navigation__item">
+                                <button class="navigation__button navigation__button--menu" type="button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" fill="none">
+                                        <path fill="#fff" fill-rule="evenodd" d="M0 1a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1Zm0 7a1 1 0 0 1 1-1h8a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1Zm1 6a1 1 0 1 0 0 2h12a1 1 0 1 0 0-2H1Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span class="visually-hidden">Открыть меню</span>
+                                </button>
+                            </li>
+                            <li class="navigation__item navigation__divider"></li>
+                            <li class="navigation__item navigation__logo">
+                                <a href="./index.html">
+                                    <img class="navigation__image" src="./images/CPS_logo.jpg" width="97" height="51" alt="Логотип сайта CSP." />
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="navigation__right-column">
+                            <li class="navigation__item">
+                                <button class="navigation__button navigation__button--call" type="button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none">
+                                        <path fill="#fff" fill-rule="evenodd" d="m1.76 12.25 2.54-.29c.61-.07 1.21.14 1.64.57l1.84 1.84c2.83-1.44 5.15-3.75 6.59-6.59l-1.85-1.85a1.99 1.99 0 0 1-.57-1.64l.29-2.52C12.36.76 13.21 0 14.23 0h1.73c1.13 0 2.07.94 2 2.07-.53 8.54-7.36 15.36-15.89 15.89-1.13.07-2.07-.87-2.07-2v-1.73c-.01-1.01.75-1.86 1.76-1.98Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span class="visually-hidden">Позвонить нам</span>
+                                </button>
+                            </li>
+                            <li class="navigation__item">
+                                <button class="navigation__button navigation__button--chat" type="button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                                        <path fill="#fff" fill-rule="evenodd" d="M18 0H2C.9 0 .01.9.01 2L0 20l4-5h14c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2Zm-7 11H5c-.55 0-1-.45-1-1s.45-1 1-1h6c.55 0 1 .45 1 1s-.45 1-1 1Zm4-5H5c-.55 0-1-.45-1-1s.45-1 1-1h10c.55 0 1 .45 1 1s-.45 1-1 1Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span class="visually-hidden">Начать чат</span>
+                                </button>
+                            </li>
+                            <li class="navigation__item">
+                                <button class="navigation__button navigation__button--profile" type="button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="none">
+                                        <path fill="#fff" d="M10.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM.017 16.612C-.113 17.342.535 18 1.339 18H18.66c.83 0 1.453-.659 1.323-1.388C19.23 12.4 15.056 10 10 10 4.943 10 .769 12.4.017 16.612Z" />
+                                    </svg>
+                                    <span class="visually-hidden">Перейти в профиль</span>
+                                </button>
+                            </li>
+                            <li class="navigation__item navigation__divider"></li>
+                            <li class="navigation__item">
+                                <button class="navigation__button navigation__button--request" type="button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                                        <path fill="#fff" d="m8.258 13.458.409-.409-1.717-1.717-.409.41-.204-.205c-.327-.368-.654-.573-.981-.532-.246 0-.45.164-.613.409-.246.409-.123.859-.082 1.145 0 .082.04.123.04.204 0 .123 0 .286-.285.327-.41.123-.94.246-1.472.532-.736.409-1.226.777-1.512 1.145C-.081 16.729 0 18.406 0 18.487c0 .123.04.205.122.246l1.104 1.144c.082.082.164.123.245.123h.123c.409 0 1.88-.082 3.597-1.431.368-.286.736-.777 1.145-1.513.286-.49.45-1.022.531-1.472.082-.286.205-.286.327-.286.041 0 .123.041.205.041.163.04.327.082.531.082.204 0 .409-.041.613-.164.245-.163.409-.368.45-.613.04-.327-.123-.654-.49-.94l-.246-.246ZM16.884 4.878l1.135-.552c.042-.042.126-.085.168-.127l1.723-2.337c.126-.17.126-.425-.042-.553L18.691.12c-.126-.127-.378-.17-.546-.042l-2.312 1.742a.588.588 0 0 0-.126.17l-.546 1.147L11 7.216 12.765 9l4.119-4.122Z" />
+                                        <path fill="#fff" d="M17.853 13.045c-.99-1.041-2.414-1.416-3.759-1.041l-6.449-6.83c.08-.376.119-.709.119-1.084a4.184 4.184 0 0 0-1.147-2.873 3.696 3.696 0 0 0-3.996-1 .542.542 0 0 0-.238.333c0 .125.04.25.119.375l1.939 2.041c.435.458.435 1.25 0 1.708a1.129 1.129 0 0 1-1.622 0L.879 2.633c-.118-.084-.236-.125-.395-.084-.118 0-.237.125-.277.25-.474 1.458-.118 3.082.91 4.165.712.791 1.741 1.208 2.77 1.208.316 0 .672-.042.989-.125l6.488 6.83a4.339 4.339 0 0 0 .99 3.957A3.668 3.668 0 0 0 15.083 20c.434 0 .83-.083 1.265-.208a.491.491 0 0 0 .277-.292.346.346 0 0 0-.119-.375l-1.938-2.04a1.332 1.332 0 0 1-.356-.875c0-.333.119-.625.356-.875s.514-.374.83-.374c.317 0 .594.124.832.374l1.938 2.041a.617.617 0 0 0 .356.125c.119-.042.238-.125.277-.25A4.92 4.92 0 0 0 19 15.918c0-1.082-.396-2.124-1.147-2.873Z" />
+                                    </svg>
+                                    <span class="visually-hidden">Оставить заявку</span>
+                                </button>
+                            </li>
+                            <li class="navigation__item">
+                                <button class="navigation__button navigation__button--status" type="button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" fill="none">
+                                        <path fill="#fff" fill-rule="evenodd" d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v17.5a1.5 1.5 0 0 0-1.5 1.5h-1a1.5 1.5 0 0 0-3 0h-1a1.5 1.5 0 0 0-3 0h-1a1.5 1.5 0 0 0-3 0h-1A1.5 1.5 0 0 0 0 18.5V1Zm9.416 10.788a4.236 4.236 0 0 1-3.086.595c-1.803-.336-3.24-1.85-3.47-3.672a4.318 4.318 0 0 1 4.994-4.83c1.802.287 3.25 1.763 3.547 3.556a4.248 4.248 0 0 1-.614 2.99l2.11 2.1a.97.97 0 0 1-1.37 1.37l-2.11-2.109Zm-4.71-3.73a2.354 2.354 0 1 1 4.707.003 2.354 2.354 0 0 1-4.707-.002Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span class="visually-hidden">Посмотреть статус ремонта</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="main-header">
+                <h2 class="main-header__title">Услуги и сервисы</h2>
+                <nav class="navigation">
+                    <ul class="navigation__list main-header__navigation-list">
+                        <li class="navigation__item">
+                            <span>Оставить заявку</span>
+                            <button class="navigation__button navigation__button--request" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                                    <path fill="#fff" d="m8.258 13.458.409-.409-1.717-1.717-.409.41-.204-.205c-.327-.368-.654-.573-.981-.532-.246 0-.45.164-.613.409-.246.409-.123.859-.082 1.145 0 .082.04.123.04.204 0 .123 0 .286-.285.327-.41.123-.94.246-1.472.532-.736.409-1.226.777-1.512 1.145C-.081 16.729 0 18.406 0 18.487c0 .123.04.205.122.246l1.104 1.144c.082.082.164.123.245.123h.123c.409 0 1.88-.082 3.597-1.431.368-.286.736-.777 1.145-1.513.286-.49.45-1.022.531-1.472.082-.286.205-.286.327-.286.041 0 .123.041.205.041.163.04.327.082.531.082.204 0 .409-.041.613-.164.245-.163.409-.368.45-.613.04-.327-.123-.654-.49-.94l-.246-.246ZM16.884 4.878l1.135-.552c.042-.042.126-.085.168-.127l1.723-2.337c.126-.17.126-.425-.042-.553L18.691.12c-.126-.127-.378-.17-.546-.042l-2.312 1.742a.588.588 0 0 0-.126.17l-.546 1.147L11 7.216 12.765 9l4.119-4.122Z" />
+                                    <path fill="#fff" d="M17.853 13.045c-.99-1.041-2.414-1.416-3.759-1.041l-6.449-6.83c.08-.376.119-.709.119-1.084a4.184 4.184 0 0 0-1.147-2.873 3.696 3.696 0 0 0-3.996-1 .542.542 0 0 0-.238.333c0 .125.04.25.119.375l1.939 2.041c.435.458.435 1.25 0 1.708a1.129 1.129 0 0 1-1.622 0L.879 2.633c-.118-.084-.236-.125-.395-.084-.118 0-.237.125-.277.25-.474 1.458-.118 3.082.91 4.165.712.791 1.741 1.208 2.77 1.208.316 0 .672-.042.989-.125l6.488 6.83a4.339 4.339 0 0 0 .99 3.957A3.668 3.668 0 0 0 15.083 20c.434 0 .83-.083 1.265-.208a.491.491 0 0 0 .277-.292.346.346 0 0 0-.119-.375l-1.938-2.04a1.332 1.332 0 0 1-.356-.875c0-.333.119-.625.356-.875s.514-.374.83-.374c.317 0 .594.124.832.374l1.938 2.041a.617.617 0 0 0 .356.125c.119-.042.238-.125.277-.25A4.92 4.92 0 0 0 19 15.918c0-1.082-.396-2.124-1.147-2.873Z" />
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="navigation__item">
+                            <span>Статус ремонта</span>
+                            <button class="navigation__button navigation__button--status" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" fill="none">
+                                    <path fill="#fff" fill-rule="evenodd" d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v17.5a1.5 1.5 0 0 0-1.5 1.5h-1a1.5 1.5 0 0 0-3 0h-1a1.5 1.5 0 0 0-3 0h-1a1.5 1.5 0 0 0-3 0h-1A1.5 1.5 0 0 0 0 18.5V1Zm9.416 10.788a4.236 4.236 0 0 1-3.086.595c-1.803-.336-3.24-1.85-3.47-3.672a4.318 4.318 0 0 1 4.994-4.83c1.802.287 3.25 1.763 3.547 3.556a4.248 4.248 0 0 1-.614 2.99l2.11 2.1a.97.97 0 0 1-1.37 1.37l-2.11-2.109Zm-4.71-3.73a2.354 2.354 0 1 1 4.707.003 2.354 2.354 0 0 1-4.707-.002Z" clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="main__features">
+                <h2 class="visually-hidden">Информация о продуктах, условия и отзывы</h2>
+                <ul class="features-list">
+                    <li class="features-list__item">
+                        <button type="button" class="features-list__button features-list__button--active">Ремонтируемые бренды</button>
+                    </li>
+                    <li class="features-list__item">
+                        <button type="button" class="features-list__button">Ремонтируемые устройства</button>
+                    </li>
+                    <li class="features-list__item">
+                        <button type="button" class="features-list__button">Дополнительные услуги</button>
+                    </li>
+                    <li class="features-list__item">
+                        <button type="button" class="features-list__button">Цены на услуги</button>
+                    </li>
+                    <li class="features-list__item">
+                        <button type="button" class="features-list__button">Адреса сервисных центров</button>
+                    </li>
+                    <li class="features-list__item">
+                        <button type="button" class="features-list__button">Специальные цены</button>
+                    </li>
+                    <li class="features-list__item">
+                        <button type="button" class="features-list__button">Отзывы</button>
+                    </li>
+                </ul>
+            </section>
+            <div class="content-wrapper">
+                <section class="main__about">
+                    <h2 class="visually-hidden">Информация о компании</h2>
+                    <p class="main__description"> Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя. </p>
+                    <p class="main__description">
+                        <span class="main__description main__description--first-half">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</span>
+                        <span class="main__description main__description--second-half"> , что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким. </span>
+                    </p>
+                    <button type="button" class="main__button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="11" fill="none">
+                            <path fill="#41F6D7" fill-rule="evenodd" d="M6.5.5 4 3 1.5.5a.707.707 0 0 0-1 1l2.793 2.793a1 1 0 0 0 1.414 0L7.5 1.5a.707.707 0 0 0-1-1Zm0 6L4 9 1.5 6.5a.707.707 0 1 0-1 1l2.793 2.793a1 1 0 0 0 1.414 0L7.5 7.5a.707.707 0 0 0-1-1Z" clip-rule="evenodd" />
+                        </svg>
+                        <span>Читать далее</span>
+                    </button>
+                </section>
+                <img class="main__picture" src="/images/CPS_about.jpg" alt="Логотив сервесного центра CPS" />
+            </div>
+        </main>
+    </body>
 </html>
