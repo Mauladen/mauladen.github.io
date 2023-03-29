@@ -57,6 +57,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 1s;
+}
+
+.button__svg {
+    fill: #fff;
+}
+
+.button--purple:hover {
+    background-color: #ff3e7867;  
+}
+
+.button--purple:hover .button__svg--purple {
+    fill: #FF3E79;
 }
 
 .list {
@@ -123,15 +136,52 @@ body {
     text-decoration: none;
 }
 
+.main__item {
+    position: relative;
+    transition: all 0.6s;
+}
+
+.main__item:hover {
+    color: #FF3E79;
+}
+
+.main__item::before {
+    content: "";
+    width: 4px;
+    height: 32px;
+    background: #FF3E79;
+    opacity: 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    position: absolute;
+    top: -5px;
+    left: -24px;
+}
+
+.main__item:hover::before {
+    opacity: 0.6;
+}
+
+.main__item--active {
+    color: #7E7E82;
+    position: relative;
+}
+
+.main__item--active:hover {
+    color: #7E7E82;
+}
+
 .main__item--active::before {
     content: "";
     width: 4px;
     height: 32px;
     background: #41f6d7;
+    opacity: 1;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     position: absolute;
-    margin: -5px 0 0 -24px;
+    top: -5px;
+    left: -24px;
 }
 
 .menu__footer {
@@ -162,13 +212,24 @@ body {
 .contacts__mail {
     color: inherit;
     text-decoration: none;
+    transition: color 0.6s;
+}
+
+.contacts__mail:hover {
+    color: #FF3E79;
 }
 
 .contacts__tel {
+    font-weight: 700;
     font-size: 24px;
     line-height: 32px;
     color: inherit;
     text-decoration: none;
+    transition: color 0.6s;
+}
+
+.contacts__tel:hover {
+    color: #FF3E79;
 }
 
 .footer__languages {
@@ -179,4 +240,20 @@ body {
     display: flex;
     flex-direction: row;
     column-gap: 7px;
+}
+
+.item__language {
+    transition: color 0.6s;
+}
+
+.item__language:hover {
+    color: #FF3E79;
+}
+
+.item__language--active {
+    color: #7E7E82;
+}
+
+.item__language--active:hover {
+    color: #7E7E82;
 }
