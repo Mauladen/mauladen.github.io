@@ -1,0 +1,22 @@
+@import 'style/fonts';
+@import 'style/var';
+@import 'style/reset';
+@import 'style/swiper';
+@import 'style/swiper-slide';
+@import 'style/swiper-pagination';
+@import 'style/visually-hidden';
+@import 'style/hidden';
+@import 'style/button';
+@import 'style/svg';
+@import 'style/list';
+@import 'style/header';
+@import 'style/navigation';
+@import 'style/main';
+@import 'style/main-header';
+@import 'style/content-wrapper';
+@import 'style/features-list';
+@import 'style/brands';
+
+body {
+	min-width: 320px;
+}

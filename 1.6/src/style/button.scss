@@ -1,0 +1,32 @@
+.button {
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.button--purple {
+	background: #FF3E79;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.3s;
+
+	&:hover {
+		background-color: #ff3e7867;
+	}
+
+	&:hover .svg--white {
+		fill: #FF3E79;
+	}
+}
+
+.button--white {
+	background: #fff;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.3s;
+}
