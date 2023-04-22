@@ -1,4 +1,4 @@
-.brands__content {
+.tech__content {
 	@media (min-width: 768px) {
 		padding-bottom: 32px;
   }
@@ -8,7 +8,7 @@
   }
 }
 
-.brands__title {
+.tech__title {
 	padding: 16px;
 	margin-bottom: 24px;
 	font-size: 16px;
@@ -19,7 +19,7 @@
 	background: linear-gradient(135deg, #F8F8F8 0%, #FFFFFF 98.61%);
 }
 
-.brands-list {
+.tech-list {
 	display: none;
 	flex-wrap: wrap;
 	row-gap: 16px;
@@ -37,16 +37,17 @@
   }
 }
 
-.brands__link {
+.tech__link {
+	text-decoration: none;
 	width: 240px;
-	height: 72px;
-	padding: 0 16px 0 16px;
+	height: 160px;
+	padding: 16px;
 	border: 1px solid #EAEAEA;
 	background-color: #fff;
 	border-radius: 6px;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: top;
 
 	&:hover {
 		border: 1px solid #FF3E79;
@@ -66,19 +67,21 @@
   }
 }
 
-.brands-list__image {
-	max-height: 45px;
-	max-width: 120px;
+.tech-item__title {
+	font-size: 16px;
+	line-height: 24px;
+	color: #1B1C21;
 }
 
-.brands-list__button {
+.tech-list__button {
 	width: 40px;
 	height: 40px;
 	background-color: #fff;
 	border: 2px solid #FF3E79;
+	align-self: end;
 }
 
-.brands__button {
+.tech__button {
 	position: relative;
 	padding-left: 16px;
 	background-image: url("../img/down.svg");
@@ -89,7 +92,7 @@
 	line-height: 24px;
 }
 
-.brands__button {
+.tech__button {
 	display: none;
 
 	@media (min-width: 768px) {
