@@ -24,9 +24,6 @@
 @import 'style/footer';
 
 body {
-	display: flex;
-	flex-direction: row-reverse;
-	justify-content: center;
 	min-width: 320px;
   font-family: "TT Lakes", sans-serif;
   font-weight: 500;
@@ -34,15 +31,25 @@ body {
   line-height: 24px;
   color: #1b1c21;
   background-color: #f8f8f8;
+
+	@media (min-width: 1440px) {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+  }
 }
 
 .menu {
 	width: 320px;
-	display: flex;
+	display: none;
 	flex-direction: column;
 	min-height: 100vh;
 	scrollbar-width: none;
 	background-color: #fff;
+
+	@media (min-width: 1440px) {
+		display: flex;
+  }
 }
 
 .menu__header {
