@@ -6,7 +6,7 @@
 	background-color: #f8f8f8;
 	width: 100%;
 
-	@media (min-width: 1120px) {
+	@media (min-width: 1440px) {
 		border-top: none;
 		width: 1120px;
   }
@@ -32,7 +32,7 @@
     display: inline;
   }
 
-	@media (min-width: 1120px) {
+	@media (min-width: 1440px) {
     display: inline;
   }
 }
@@ -40,7 +40,7 @@
 .main__description--second-half {
 	display: none;
 
-	@media (min-width: 1120px) {
+	@media (min-width: 1440px) {
     display: inline;
   }
 }
@@ -71,7 +71,7 @@
     flex-basis: 0;
   }
 
-	@media (min-width: 1120px) {
+	@media (min-width: 1440px) {
 		padding-bottom: 50px;
 		width: 531px;
 		height: 307px;

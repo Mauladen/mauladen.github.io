@@ -27,7 +27,7 @@
 .navigation__item {
 	margin-right: 16px;
 
-	@media (min-width: 1120px) {
+	@media (min-width: 1440px) {
 		display: flex;
 		align-items: center;
 		grid-gap: 8px;
@@ -97,7 +97,7 @@
 }
 
 .navigation__button--request {
-	@media (min-width: 1120px) {
+	@media (min-width: 1440px) {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -105,7 +105,7 @@
 }
 
 .navigation__button--status {
-	@media (min-width: 1120px) {
+	@media (min-width: 1440px) {
 	display: flex;
 	align-items: center;
 	justify-content: center;
