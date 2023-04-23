@@ -6,7 +6,7 @@
 }
 
 .button--purple {
-	background: #FF3E79;
+	background: $base-purble;
 	border-radius: 20px;
 	display: flex;
 	justify-content: center;
@@ -14,18 +14,18 @@
 	transition: all 0.3s;
 
 	&:hover {
-		background-color: #ff3e7867;
-		color: #FF3E79;
+		background-color: $dark-purple;
+		color: $base-purble;
 	}
 
 	&:hover .svg--white {
-		fill: #FF3E79;
+		fill: $base-purble;
 		transform: scale(1.1);
 	}
 }
 
 .button--white {
-	background: #fff;
+	background: $white;
 	border-radius: 20px;
 	display: flex;
 	justify-content: center;

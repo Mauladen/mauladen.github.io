@@ -31,8 +31,8 @@
 	width: 260px;
 	height: 200px;
 	padding: 16px;
-	border: 1px solid #EAEAEA;
-	background-color: #fff;
+	border: 1px solid $gray;
+	background-color: $white;
 	display: flex;
 	align-items: flex-start;
 	align-content: space-between;
@@ -42,19 +42,19 @@
 	transition: all 0.3s;
 
 	&:hover {
-		border: 1px solid #FF3E79;
+		border: 1px solid $base-purble;
 	}
 
 	&:hover .prices-list__button {
-		border: 2px solid white;
-		background-color: #ff3e7867;
+		border: 2px solid $gray;
+		background-color: $dark-purple;
 	}
 }
 
 .prices-item__title {
 	font-size: 14px;
 	line-height: 16px;
-	color: #7E7E82;
+	color: $gray;
 	margin-bottom: 4px;
 }
 
@@ -78,5 +78,5 @@
 	font-size: 12px;
 	line-height: 24px;
 	text-transform: uppercase;
-	color: #fff
+	color: $white
 }

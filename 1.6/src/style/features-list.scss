@@ -25,7 +25,7 @@
 	font-family: "TT Lakes", sans-serif;
 	font-size: 16px;
 	font-weight: 500;
-	color: #7e7e82;
+	color: $dark-gray;
 	padding: 8px 10px;
 	background-color: transparent;
 	border: none;
@@ -34,21 +34,21 @@
 
 .features-list__button:hover {
 	cursor: pointer;
-	background-color: #ffffff;
-	outline: 2px solid #FF3E79;
+	background-color: $white;
+	outline: 2px solid $base-purble;
 	border-radius: 6px;
-	color: #FF3E79;
+	color: $base-purble;
 }
 
 .features-list__button--active {
-	background: #ffffff;
-	outline: 2px solid #b8ffec;
+	background: $white;
+	outline: 2px solid $blue;
 	border-radius: 6px;
 }
 
 .features-list__button--active:hover {
-	background: #ffffff;
-	outline: 2px solid #b8ffec;
+	background: $white;
+	outline: 2px solid $blue;
 	border-radius: 6px;
-	color: #7e7e82;
+	color: $gray;
 }

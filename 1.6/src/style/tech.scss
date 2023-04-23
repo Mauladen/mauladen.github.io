@@ -31,8 +31,8 @@
 	width: 240px;
 	height: 160px;
 	padding: 16px;
-	border: 1px solid #EAEAEA;
-	background-color: #fff;
+	border: 1px solid $gray;
+	background-color: $white;
 	border-radius: 6px;
 	display: flex;
 	justify-content: space-between;
@@ -40,12 +40,12 @@
 	transition: all 0.3s;
 
 	&:hover {
-		border: 1px solid #FF3E79;
+		border: 1px solid $base-purble;
 	}
 
 	&:hover .tech-list__button {
-		border: 2px solid white;
-		background-color: #ff3e7867;
+		border: 2px solid $white;
+		background-color: $dark-purple;
 	}
 
 	@media (min-width: 768px) {
@@ -66,8 +66,8 @@
 .tech-list__button {
 	width: 40px;
 	height: 40px;
-	background-color: #fff;
-	border: 2px solid #FF3E79;
+	background-color: $white;
+	border: 2px solid $base-purble;
 	align-self: end;
 }
 

@@ -22,6 +22,7 @@
 @import 'style/table';
 @import 'style/prices-info';
 @import 'style/footer';
+@import 'style/modal-container';
 
 body {
 	min-width: 320px;
@@ -37,16 +38,6 @@ body {
 		flex-direction: row-reverse;
 		justify-content: center;
   }
-}
-
-.menu-container--open {
-	position: fixed;
-  top: 0;
-  left: 0;
-	width: 100%;
-	height: 100%;
-  background-color: #F2F2F2CC;
-	z-index: 1;
 }
 
 .menu {

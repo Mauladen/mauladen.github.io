@@ -17,7 +17,7 @@
 	margin-bottom: 16px;
 	font-size: 14px;
 	line-height: 20px;
-	color: #1B1C21;
+	color: $black;
 }
 
 .price-info__commercial {
@@ -27,11 +27,11 @@
 	gap: 10px;
 
 	&:hover .price-info__commercial-text {
-		color: #FF3E79;
+		color: $base-purble;
 	}
 
 	&:hover .svg--purple {
-		fill: #ff3e7867;
+		fill: $dark-purple;
 	}
 }
 
@@ -40,5 +40,5 @@
 	text-decoration: none;
 	font-size: 16px;
 	line-height: 24px;
-	color: #1B1C21;
+	color: $black;
 }

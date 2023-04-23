@@ -2,7 +2,7 @@
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 16px;
-	color: #7E7E82;
+	color: $dark-gray;
 	text-align: left;
 	padding-bottom: 16px;
 	padding: 0 24px 16px 24px;
@@ -13,8 +13,8 @@
 	line-height: 18px;
 	color: #1B1C21;
 	padding: 23px 24px;
-	background-color: #fff;
-	border-bottom: 1px solid #EAEAEA;
+	background-color: $white;
+	border-bottom: 1px solid $gray;
 	text-align: left;
 }
 
@@ -37,5 +37,5 @@
 	font-size: 12px;
 	line-height: 24px;
 	text-transform: uppercase;
-	color: #fff
+	color: $white
 }
