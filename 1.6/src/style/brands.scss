@@ -69,6 +69,7 @@
 
 .brands__button {
 	position: relative;
+	display: none;
 	padding-left: 16px;
 	background-image: url("../img/down.svg");
 	background-position: left;
@@ -76,10 +77,6 @@
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 24px;
-}
-
-.brands__button {
-	display: none;
 
 	@media (min-width: 768px) {
 		display: block;
