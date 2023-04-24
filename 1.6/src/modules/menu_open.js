@@ -1,7 +1,7 @@
 let menuBlock = document.querySelector('.menu');
 let menuContainer = document.querySelector('.modal-container');
 let menuOpenButton = document.querySelector('.navigation__button--menu');
-let menuCloseButton = document.querySelector('.header__button--close');
+let menuCloseButton = document.querySelector('.menu-header__button--close');
 
 menuOpenButton.addEventListener('click', () => {
 	menuBlock.classList.add('menu--animation-open');
