@@ -6,6 +6,7 @@
 	text-transform: uppercase;
 	color: $dark-gray;
 	font-weight: 400;
+	border-top: 1px solid $light-blue;
 	background: linear-gradient(135deg, #F8F8F8 0%, $white 98.61%);
 
 	@media (min-width: 768px) {
