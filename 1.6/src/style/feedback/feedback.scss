@@ -6,19 +6,15 @@
 	position: fixed;
 	z-index: 3;
 	top: 0px;
-	transform: translateX(100vh);
+	right: -440px;
 	flex-direction: column;
 	min-height: 100vh;
 	scrollbar-width: none;
 	background-color: $white;
-	transition: transform 0.3s linear;
+	transition: right 0.2s;
 
 	@media (min-width: 320px) {
 		box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
-  }
-
-	@media (min-width: 768px) {
-		width: 440px;
   }
 }
 
@@ -31,5 +27,11 @@
 }
 
 .feedback--animation-open {
-	transform: translateX(0px);
+	width: 320px;
+	right: 0px;
+
+	@media (min-width: 768px) {
+		width: 440px;
+		right: 0px;
+  }
 }
