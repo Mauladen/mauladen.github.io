@@ -13,7 +13,7 @@ if (windowInnerWidth < 1016) {
                 dropdownBrandsButton.textContent = btnText;
                 dropdownBrandsButton.setAttribute(
                     'style',
-                    'background-image: url(./img/up.svg)'
+                    'background-image: url(assets/up.svg)'
                 );
             } else {
                 dropdownBrandsBlock[i].classList.toggle('hidden');
@@ -31,7 +31,7 @@ if (windowInnerWidth < 1016) {
                 dropdownBrandsButton.textContent = btnText;
                 dropdownBrandsButton.setAttribute(
                     'style',
-                    'background-image: url(./img/up.svg)'
+                    'background-image: url(assets/up.svg)'
                 );
             } else {
                 dropdownBrandsBlock[i].classList.toggle('hidden');
